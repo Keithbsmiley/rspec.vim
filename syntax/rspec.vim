@@ -4,7 +4,7 @@
 "
 "
 
-let b:old_syntax = b:current_syntax
+let b:old_syntax = get(b:, 'current_syntax', 'ruby')
 unlet! b:current_syntax
 
 setlocal commentstring=#\ %s
